@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一個基於 HTML5/CSS3/Vanilla JS 實作的純前端極簡風電風扇，具備逼真的起步與停轉慣性物理模擬，適合放置於 GitHub Pages。">
+  <title>極簡風電風扇 - 現代白色美學互動網頁</title>
+  <!-- 導入高級現代字體 Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-decor">
+    <div class="decor-circle decor-1"></div>
+    <div class="decor-circle decor-2"></div>
+  </div>
+
+  <header class="app-header">
+    <h1>BREEZE</h1>
+    <p class="subtitle">極簡白色美學電風扇</p>
+  </header>
+
+  <main class="app-main">
+    <div class="fan-wrapper">
+      <!-- 左右風流粒子效果區 -->
+      <div class="wind-flow" id="wind-flow">
+        <div class="wind-line wind-1"></div>
+        <div class="wind-line wind-2"></div>
+        <div class="wind-line wind-3"></div>
+      </div>
+
+      <div class="fan-container">
+        <!-- 電風扇頭部 -->
+        <div class="fan-head">
+          <div class="grill-back"></div>
+          <div class="fan-blades" id="fan-blades">
+            <div class="blade-hub"></div>
+            <div class="blade blade-1"></div>
+            <div class="blade blade-2"></div>
+            <div class="blade blade-3"></div>
+            <div class="blade blade-4"></div>
+          </div>
+          <div class="grill-front">
+            <div class="brand-badge">
+              <div class="brand-logo">±0</div>
+            </div>
+          </div>
+        </div>
+        <!-- 支撐頸部 -->
+        <div class="fan-neck">
+          <div class="neck-inner"></div>
+        </div>
+        <!-- 電風扇底座 -->
+        <div class="fan-base">
+          <div class="base-surface">
+            <button class="power-switch" id="fan-power-btn" aria-label="電源開關">
+              <span class="power-icon">POWER</span>
+              <span class="led-indicator" id="fan-led"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p>© 2026 Crafted with Passion</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
