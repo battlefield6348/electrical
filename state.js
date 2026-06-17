@@ -12,9 +12,9 @@ export class FanState {
     this.oscVelocity = 0;
     this.oscPhase = 0;
     this.maxOscAngle = 45; // 左右擺動最大各 45 度
-    this.targetOscVelocity = 0.0015; // 目標相位角速度 (每毫秒)
-    this.oscAcceleration = 0.000005; // 擺頭加速度 (每毫秒)
-    this.oscFriction = 0.98; // 擺頭摩擦力 (每毫秒衰減率)
+    this.targetOscVelocity = 0.0006; // 目標相位角速度 (每毫秒)，約 10.5 秒一週期
+    this.oscAcceleration = 0.0000008; // 擺頭加速度 (每毫秒)
+    this.oscFriction = 0.998; // 擺頭摩擦力 (每毫秒衰減率)，使其優雅且緩慢地停下
   }
 
   get oscAngle() {
