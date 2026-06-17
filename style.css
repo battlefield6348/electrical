@@ -266,6 +266,8 @@ body {
 
 .blade {
   position: absolute;
+  bottom: 50%;
+  left: calc(50% - 32.5px);
   background: var(--blade-bg);
   border: 1px solid var(--blade-border);
   backdrop-filter: blur(2px);
@@ -277,10 +279,10 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
 }
 
-.blade-1 { transform: rotate(0deg) translateY(-105px); }
-.blade-2 { transform: rotate(90deg) translateY(-105px); }
-.blade-3 { transform: rotate(180deg) translateY(-105px); }
-.blade-4 { transform: rotate(270deg) translateY(-105px); }
+.blade-1 { transform: rotate(0deg); }
+.blade-2 { transform: rotate(90deg); }
+.blade-3 { transform: rotate(180deg); }
+.blade-4 { transform: rotate(270deg); }
 
 /* Anterior Grill */
 .grill-front {
