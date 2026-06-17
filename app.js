@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     state.update(clampedDelta);
     
-    // 更新葉片旋轉 (2D rotate)
-    blades.style.transform = `rotate(${state.angle}deg)`;
+    // 更新葉片旋轉 (同時保留 Z 軸分層)
+    blades.style.transform = `translateZ(2px) rotate(${state.angle}deg)`;
     
     // 更新擺頭旋轉 (3D rotateY)
     fanHead.style.transform = `rotateY(${state.oscAngle}deg)`;
